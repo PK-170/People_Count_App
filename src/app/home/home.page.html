@@ -1,0 +1,41 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>
+      People Counter
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-header collapse="condense">
+    <ion-toolbar>
+      <ion-title size="large">People Counter</ion-title>
+    </ion-toolbar>
+  </ion-header>
+
+  <div id="container">
+    <strong>Ready to create an app?</strong>
+    <p>Start with Ionic <a target="_blank" rel="noopener noreferrer" href="https://ionicframework.com/docs/components">UI Components</a></p>
+  </div>
+  <ion-grid>
+    <ion-row>
+      <ion-col>
+        <div class="count"> {{count}}</div>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+ 
+  <Ion-Fab vertical="bottom" horizontal="start" slot="fixed">
+        <Ion-Fab-Button (click)="increment()">
+            <ion-icon name="log-in-outline"></ion-icon>
+          </Ion-Fab-Button>
+    </Ion-Fab>
+
+    <Ion-Fab vertical="bottom" horizontal="end" slot="fixed">
+      <Ion-Fab-Button (click)="decrement()">
+        <ion-icon name="download-outline"></ion-icon>
+        </Ion-Fab-Button>
+
+  </Ion-Fab>
+
+</ion-content>
